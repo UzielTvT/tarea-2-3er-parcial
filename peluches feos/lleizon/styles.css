@@ -1,0 +1,90 @@
+body {
+    background-image: url('https://i.makeagif.com/media/7-10-2024/Qxv9N8.gif'); /* Ruta del GIF */
+    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+    background-position: center; /* Centra el GIF */
+    background-attachment: fixed; /* Hace que el fondo se quede fijo mientras se hace scroll */
+    height: 100vh; /* Asegura que cubra toda la altura de la pantalla */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+/* Estilos generales para el producto */
+.producto {
+    border: 2px solid #3498db; /* Borde más llamativo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    margin: 15px;
+    max-width: 300px;
+    background: linear-gradient(145deg, rgba(231, 153, 255, 0.8), rgba(224, 224, 224, 0.1)); /* Gradiente con opacidad */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+/* Efecto al pasar el mouse por encima */
+.producto:hover {
+    transform: translateY(-10px); /* Levanta el producto al hacer hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Imagen del producto */
+img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom al pasar el mouse por la imagen */
+.producto:hover img {
+    transform: scale(1.1);
+}
+
+/* Contenedor de la imagen */
+.product-image {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo de la tarjeta */
+.card {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.034);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover para la tarjeta */
+.card:hover {
+    background-color: #ff90ffaf;
+    transform: translateY(-5px); /* Levanta la tarjeta al hacer hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Más sombra en el hover */
+}
+
+/* Agregamos un efecto de transición para que todo se vea más fluido */
+.card img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.textHs {
+    background: linear-gradient(to right, 
+        rgba(248, 215, 218, 0.5), /* Rosa claro con 50% de transparencia */
+        rgba(252, 231, 194, 0.5), /* Amarillo claro con 50% de transparencia */
+        rgba(209, 243, 224, 0.5), /* Verde claro con 50% de transparencia */
+        rgba(204, 231, 246, 0.5), /* Azul claro con 50% de transparencia */
+        rgba(209, 196, 233, 0.5), /* Lila claro con 50% de transparencia */
+        rgba(248, 209, 243, 0.5)  /* Rosa pastel claro con 50% de transparencia */
+    );    padding: 10px 20px;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
